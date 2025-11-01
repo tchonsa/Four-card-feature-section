@@ -1,0 +1,146 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/poppins-v24-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Poppins';
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    
+}
+
+header {
+    text-align: center;
+    max-width: 500px;
+}
+
+h1 {
+    font-size:30px ;
+    font-weight: 400;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+header p {
+  padding-top: 10px;
+    font-size: 15px;
+    font-size: 200;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 2rem;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+  width: 300px;
+  height: 220px;
+  border-radius: 10px;
+  box-shadow: -10px 10px 60px -30px hsl(212, 6%, 44%);
+  margin: 20px;
+  padding: 30px;
+  border-top:5px solid;
+  position: relative;
+}
+
+.supervisor { border-color: hsl(180, 62%, 55%); }
+.team-builder { border-color: hsl(0, 78%, 62%); }
+.karma { border-color: hsl(34, 97%, 64%); }
+.calculator { border-color: hsl(212, 86%, 64%); }
+
+section img {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 450px) {
+  body {
+    padding: 24px;
+    text-align: center;
+  }
+
+  main {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 1.5rem;
+    padding: 0;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  section {
+    width: 100%;
+    max-width: 340px;
+    margin: 0;
+    padding: 1.25rem;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 8px 18px rgba(16,24,40,0.08);
+  }
+
+  section h3 { font-size: 22px; margin-bottom: 0.5rem; }
+  section p  { font-size: 17px; line-height: 1.4; color: hsl(234,12%,34%); }
+  header p { padding: 1rem; padding-bottom: 3rem;}
+
+  section {
+    padding-bottom: 7rem; /* room for icon */
+  }
+
+  section img {
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;
+    width: 70px;
+    height: 70px;
+  }
+}
